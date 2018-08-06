@@ -22,7 +22,7 @@ class InteractiveRecord
     column_names.compact
   end
 
-  # Goes in student class
+  # Goes in student class to make attr_accessors so all code will work
   # self.column_names.each do |col_name|
   #   attr_accessor col_name.to_sym
   # end
