@@ -25,6 +25,11 @@ class InteractiveRecord
     attr_accessor col_name.to_sym
   end
 
+  def initialize(options = {})
+    options.each do |property, value| 
+      self.send("#{property}=", value)
+    end
+
   def table_name_for_insert
   end
 
