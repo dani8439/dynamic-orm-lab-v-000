@@ -22,7 +22,7 @@ class InteractiveRecord
     column_names.compact
   end
 
-  
+
 
   def initialize(options = {})
     options.each do |property, value|
@@ -59,6 +59,7 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
 
-  def self.find_by
+  def self.find_by(x)
+    
   end
 end
